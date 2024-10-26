@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Rule Engine</h1>
+
+    <div class="section">
+        <h2>Create Rule</h2>
+        <input type="text" id="ruleString" placeholder="Enter rule (e.g., age > 30)" required>
+        <button id="createRule">Create Rule</button>
+        <div id="ruleCreationResponse"></div>
+    </div>
+
+    <div class="section">
+        <h2>Evaluate Rule</h2>
+        <input type="number" id="userId" placeholder="User ID" required>
+        <input type="number" id="ruleId" placeholder="Rule ID" required>
+        <button id="evaluateRule">Evaluate</button>
+        <div id="evaluationResult"></div>
+    </div>
+
+    <div class="section">
+        <h2>Add User</h2>
+        <input type="text" id="userName" placeholder="Name" required>
+        <input type="number" id="userAge" placeholder="Age" required>
+        <input type="text" id="userDepartment" placeholder="Department" required>
+        <input type="number" id="userIncome" placeholder="Income" required>
+        <input type="number" id="userSpend" placeholder="Spend" required>
+        <button id="addUser">Add User</button>
+        <div id="userCreationResponse"></div>
+    </div>
+
+    <div class="section">
+        <h2>View Users</h2>
+        <button id="viewUsers">View Users</button>
+        <div id="userList"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
